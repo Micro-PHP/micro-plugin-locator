@@ -23,9 +23,6 @@ class LocatorPlugin implements DependencyProviderInterface
 {
     private ?KernelInterface $kernel = null;
 
-    /**
-     * {@inheritDoc}
-     */
     public function provideDependencies(Container $container): void
     {
         $container->register(LocatorFacadeInterface::class, function (

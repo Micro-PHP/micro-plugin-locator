@@ -12,7 +12,7 @@
 namespace Micro\Plugin\Locator\Locator;
 
 /**
- * @todo: Update this afrer implements micro/cache plugin.
+ * @todo: Update this after implements micro/cache plugin.
  */
 class LocatorCached implements LocatorInterface
 {

@@ -13,15 +13,13 @@ namespace Micro\Plugin\Locator\Locator;
 
 use Micro\Framework\Kernel\KernelInterface;
 
-class LocatorFactory implements LocatorFactoryInterface
+readonly class LocatorFactory implements LocatorFactoryInterface
 {
-    public function __construct(private readonly KernelInterface $kernel)
-    {
+    public function __construct(
+        private KernelInterface $kernel
+    ) {
     }
 
-    /**
-     * {@inheritDoc}
-     */
     public function create(): LocatorInterface
     {
         return new Locator($this->kernel);

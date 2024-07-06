@@ -13,10 +13,10 @@ namespace Micro\Plugin\Locator\Facade;
 
 use Micro\Plugin\Locator\Locator\LocatorFactoryInterface;
 
-class LocatorFacade implements LocatorFacadeInterface
+readonly class LocatorFacade implements LocatorFacadeInterface
 {
     public function __construct(
-        private readonly LocatorFactoryInterface $locatorFactory
+        private LocatorFactoryInterface $locatorFactory
     ) {
     }
 
